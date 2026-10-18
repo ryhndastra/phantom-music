@@ -21,3 +21,4 @@ COPY . .
 
 # Jalankan bot
 CMD ["node", "src/index.js"]
+

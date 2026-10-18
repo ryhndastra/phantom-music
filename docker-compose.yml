@@ -6,3 +6,4 @@ services:
     env_file:
       - .env
     # Tidak butuh section ports karena bot Discord tidak mendengarkan port inbound!
+
