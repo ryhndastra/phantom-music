@@ -37,7 +37,20 @@ PREFIX=!
 DEFAULT_VOLUME=100
 ```
 
-### 3. Run the Bot
+### 3. Run with Docker (Recommended for Debian VPS / Servers)
+No need to install Node.js or FFmpeg on the host:
+```bash
+# Build and run container in background
+docker compose up -d --build
+
+# View logs
+docker compose logs -f
+
+# Stop container
+docker compose down
+```
+
+### Alternatively: Run with Node.js directly
 ```bash
 # Production mode
 npm start

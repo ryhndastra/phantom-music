@@ -1,0 +1,8 @@
+services:
+  phantom-music:
+    build: .
+    container_name: phantom-music
+    restart: unless-stopped
+    env_file:
+      - .env
+    # Tidak butuh section ports karena bot Discord tidak mendengarkan port inbound!
